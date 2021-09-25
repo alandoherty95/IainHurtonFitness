@@ -1,0 +1,19 @@
+<ul>
+    <li class="list-inline-item dropdown">
+        <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="text-center">
+                <div><i class="fas fa-user fa-lg"></i></div>
+                <p class="my-0">Account</p>
+            </div>
+        </a>
+        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+            {% if request.user.is_superuser %}
+            <a href="{% url 'account_logout' %}" class="dropdown-item">Manage Blog </a>
+            <a href="" class="dropdown-item">Profile</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+            {% endif %}
+        </div>
+    </li>
+</ul>
