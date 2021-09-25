@@ -1,0 +1,14 @@
+Hi {{ instance.name }}  
+
+Thank you for getting in touch!
+
+I have received your message: 
+
+{{ instance.subject }} 
+
+I will respond to your message as soon as possible.
+
+Go raibh míle maith agat!
+
+Best wishes,
+Iain Hurton

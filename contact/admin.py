@@ -1,3 +1,9 @@
 from django.contrib import admin
+from .models import ReceivedMessage
 
-# Register your models here.
+
+class ReceivedMessageAdmin(admin.ModelAdmin):
+    list_display = ('name', 'subject',)
+
+
+admin.site.register(ReceivedMessage, ReceivedMessageAdmin)
