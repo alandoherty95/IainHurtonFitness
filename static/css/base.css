@@ -34,6 +34,12 @@ body {
     min-width: 260px;
 }
 
+.go-button {
+    background: white;
+    color: #1985A1;
+    min-width: 260px;
+}
+
 .btn-black {
     background: white;
     color: black;
