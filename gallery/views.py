@@ -8,4 +8,4 @@ def gallery(request):
 
     template = "gallery/gallery.html"
 
-    return render(request, template, context)
+    return render(request, template)
