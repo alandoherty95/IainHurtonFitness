@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'home',
     'contact',
     'gallery',
+    'about',   
     'crispy_forms',
 ]
 
