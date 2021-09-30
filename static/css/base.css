@@ -2,11 +2,13 @@ html {
     height: 100%;
 }
 
+/* 
+background: url('https://github.com/alandoherty95/IainHurtonFitness/blob/main/media/images/hf-cover-image.jpg?raw=true') no-repeat center center fixed;
+background-size: cover;
+*/
+
 body {
-    background: url('https://github.com/alandoherty95/IainHurtonFitness/blob/main/media/images/hf-cover-image.jpg?raw=true') no-repeat center center fixed;
-    background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -19,41 +21,58 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
-    text-transform: uppercase;
-}
-
 .main-logo-link {
     width: fit-content;
 }
 
 .enter-button {
-    background: white;
-    color: black;
+    background: #1985A1;
+    color: white;
     border: 2px solid #1985A1;
     min-width: 260px;
 }
 
 .go-button {
-    background: white;
-    color: #1985A1;
+    background: #1985A1;
+    color: white;
+    border: 2px solid #1985A1;
     min-width: 260px;
 }
 
 .btn-black {
-    background: white;
-    color: black;
+    background: black;
+    color: white;
+    border: 2px solid black;
+    min-width: 260px;
 }
 
 .enter-button:hover,
 .enter-button:active,
-.enter-button:focus,
+.enter-button:focus {
+    background: white;
+    color: #1985A1;
+    border: 2px solid #1985A1;
+}
+
+.go-button:hover,
+.go-button:active,
+.go-button:focus {
+    background: white;
+    color: black;
+    border: 2px solid #1985A1;
+}
+
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: black;
-    color: white;
-    border: 2px solid #1985A1;
+    background: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.logo-style {
+    color: #1985A1;
+    font-family: 'Courgette', cursive;
 }
 
 .text-black {

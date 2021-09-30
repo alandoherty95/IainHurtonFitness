@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     {% endblock %}
 
     {% block extra_css %}
@@ -49,7 +50,7 @@
             <!-- Home nav link -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>Hurton</strong> Fitness</h2>
+                    <h2 class="logo-style text-black my-0"><strong>Hurton</strong> Fitness</h2>
                 </a>
             </div>
         </div>
@@ -60,11 +61,6 @@
                 </button>
                 {% include 'includes/main-nav.html' %}
             </nav>
-        </div>
-        <div id="delivery-banner" class="row text-center">
-            <div class="col bg-black text-white">
-                <h4 class="logo-font my-1">Start your fitness journey today!</h4>
-            </div>
         </div>
     </header>
 
