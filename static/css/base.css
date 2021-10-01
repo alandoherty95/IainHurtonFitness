@@ -46,6 +46,13 @@ body {
     min-width: 260px;
 }
 
+.collapse-button {
+    background: #1985A1;
+    color: white;
+    border: 2px solid #1985A1;
+    margin: 1px;
+}
+
 .enter-button:hover,
 .enter-button:active,
 .enter-button:focus {
@@ -70,6 +77,14 @@ body {
     border: 2px solid black;
 }
 
+.collapse-button:hover,
+.collapse-button:active,
+.collapse-button:focus {
+    background: white;
+    color: black;
+    border: 2px solid #1985A1;
+}
+
 .logo-style {
     color: #1985A1;
     font-family: 'Courgette', cursive;
@@ -81,6 +96,19 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card {
+    border: 1px solid #1985A1;
+}
+
+.card-body {
+    font-size: larger;
 }
 
 /* -------------------------------- Media Queries */
