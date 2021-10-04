@@ -29,21 +29,21 @@ body {
     background: #1985A1;
     color: white;
     border: 2px solid #1985A1;
-    min-width: 260px;
+    min-width: 200px;
 }
 
 .go-button {
     background: #1985A1;
     color: white;
     border: 2px solid #1985A1;
-    min-width: 260px;
+    min-width: 200px;
 }
 
 .btn-black {
     background: black;
     color: white;
     border: 2px solid black;
-    min-width: 260px;
+    min-width: 200px;
 }
 
 .collapse-button {
@@ -98,6 +98,13 @@ body {
     border: 1px solid black !important;
 }
 
+.nav-item:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    border-bottom: 1px solid #1985A1;
+    border: 25%;
+}
+
 .nav-item {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -109,6 +116,36 @@ body {
 
 .card-body {
     font-size: larger;
+    min-height: 10rem;
+    margin: 0.5rem;
+}
+
+.card-body:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.social {
+    text-align: center;
+}
+
+#social-links {
+    font-size: 2em;
+    padding: 0.25em;
+    text-decoration: none;
+}
+
+#social-links li {
+    padding: 0.5em;
+}
+
+#social-links a {
+    text-decoration: none;
+    color: #1985A1;
+}
+
+#social-links li a:visited {
+    text-decoration: none;
 }
 
 /* -------------------------------- Media Queries */
