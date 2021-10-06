@@ -29,30 +29,33 @@
             <form method="POST" action="{% url 'contact' %}">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button type="Submit" class="btn go-button text-uppercase rounded-0 my-2">Send</button>
-                <a href="" class="btn btn-black text-uppercase rounded-0 my-2">Cancel</a>
+                <button type="Submit" class="btn go-button text-uppercase rounded-0 my-2" title="Send Message">Send</button>
+                <a href="" class="btn btn-black text-uppercase rounded-0 my-2" title="Cancel Message">Cancel</a>
             </form>
         </div>
     </div>
+</div>
+<div class="container-fluid mb-2">
     <div class="row mt-2">
         <div class="col-8 offset-2 social">
             <ul id="social-links">
                 <li class="list-inline-item">
-                    <a href="https://www.facebook.com/pages/category/Personal-Blog/Iain-Hurton-Fitness-2181026858613543/" target="_blank">
+                    <a href="https://www.facebook.com/pages/category/Personal-Blog/Iain-Hurton-Fitness-2181026858613543/" title="Facebook Profile" target="_blank">
                         <h3><i class="fa fa-facebook"></i> Facebook</h3>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="https://open.spotify.com/playlist/59xQzFKBIph1NGVyC7e1zB?si=zeuUQVdgRg-gATAyl1OJbg" target="_blank">
+                    <a href="https://open.spotify.com/playlist/59xQzFKBIph1NGVyC7e1zB?si=zeuUQVdgRg-gATAyl1OJbg" title="Spotify Playlist" target="_blank">
                         <h3><i class="fa fa-spotify"></i> Spotify</h3>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="https://www.instagram.com/hurtonsfitness/?hl=en" target="_blank">
+                    <a href="https://www.instagram.com/hurtonsfitness/?hl=en" title="Instagram Profile" target="_blank">
                         <h3><i class="fa fa-instagram"></i> Instagram</h3>
                     </a>
                 </li>
             </ul>
         </div>
     </div>
-    {% endblock %}
+</div>
+{% endblock %}

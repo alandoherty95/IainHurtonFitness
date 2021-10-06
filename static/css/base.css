@@ -148,6 +148,11 @@ body {
     text-decoration: none;
 }
 
+#social-links li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
 /* Club ethos */
 
 #club-ethos {
@@ -214,7 +219,7 @@ body {
 }
 
 #circle-cover-bg {
-    background: url('../media/images/circle-image.jpg') no-repeat center center;
+    background: url('https://github.com/alandoherty95/IainHurtonFitness/blob/main/media/images/circle-image.jpg?raw=true') no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
