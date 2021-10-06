@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid mb-2">
+    <div class="row">
+        <div class="col">
+            <h2 class="logo-style mt-3">Blog</h2>
+            <!-- Edit & delete buttons for admin only-->
+            {% if request.user.is_superuser %}
+            <a href="{% url 'add_blogpost' %}" class="btn go-button rounded-3 btn-lg" title="Add post">Add Post</a>
+            {% endif %}
+            <hr>
+        </div>
+    </div>
+    <!-- Blog container -->
+    <section>
+        <div class="container">
+            {% for post in posts %}
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <a href="{% url 'blogpost_detail' post.id %}" class="text-success">
+                        <h2>{{ post.title }}</h2>
+                    </a>
+                    <!-- Edit & delete buttons for admin only-->
+                    {% if request.user.is_superuser %}
+                    <small>
+                        <a href="{% url 'edit_blogpost' post.id %}" class="text-warning" title="Edit post">Edit</a> |
+                        <a href="{% url 'delete_blogpost' post.id %}" class="text-danger" title="Delete post">Delete</a>
+                    </small>
+                    {% endif %}
+                    <p>{{ post.body|truncatechars:80 }}</p>
+                    <a href="{% url 'blogpost_detail' post.id %}" class="btn btn-outline-green rounded-3 float-right">View Post</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <!-- Displays post image -->
+                    {% if post.image %}
+                    <a href="{{ post.image.url }}" target="_blank">
+                        <img class="card-img-top img-fluid" src="{{ post.image.url }}" alt="{{ post.title }}">
+                    </a>
+                    <!-- Or else displays default image -->
+                    {% else %}
+                    <a href="">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
+                    </a>
+                    {% endif %}
+                    <hr>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endblock %}

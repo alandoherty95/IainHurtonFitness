@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col mt-3">
+            <!-- Page heading -->
+            <h2 class="logo-style mt-3">Siopa Worldwide Blog</h2>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Post image -->
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
+                <h3 class="text-success">{{ post.title }}</h3>
+                <!-- Displays post image -->
+                {% if post.image %}
+                <a href="{{ post.image.url }}" target="_blank">
+                    <img class="card-img-top img-fluid" src="{{ post.image.url }}" alt="{{ post.title }}">
+                </a>
+                <!-- Or else displays default image -->
+                {% else %}
+                <a href="">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        <!-- Post details -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="blogpost-details-container">
+                <p>{{ post.body }}</p>
+                <!-- Admin access only -->
+                {% if request.user.is_superuser %}
+                <small class="my-2">
+                    <a href="{% url 'edit_blogpost' post.id %}" class="text-warning" title="Edit post">Edit</a> |
+                    <a href="{% url 'delete_blogpost' post.id %}" class="text-danger" title="Delete post">Delete</a>
+                </small>
+                {% endif %}
+            </div>
+            <a href="{% url 'all_blogposts' %}" class="btn go-button rounded-3 btn-lg">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i> Return to Blog</span>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

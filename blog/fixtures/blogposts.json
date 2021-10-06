@@ -1,0 +1,21 @@
+[{
+        "pk": 1,
+        "model": "blog.blogpost",
+        "fields": {
+            "title": "Level Up",
+            "body": "Every level in life will require a different version of you!",
+            "date_created": "2021-10-7T18:11:23.523Z",
+            "image": "https://github.com/alandoherty95/IainHurtonFitness/blob/main/media/images/iain-squat.jpg?raw=true"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "blog.blogpost",
+        "fields": {
+            "title": "Welcome to Hurton Fitness",
+            "body": "Iain Hurton is experienced in personal training and group fitness classes. You can learn more about the founder of Hurton Fitness by navigating to the About section.",
+            "date_created": "2021-10-6T18:21:23.523Z",
+            "image": "https://github.com/alandoherty95/IainHurtonFitness/blob/main/media/images/iain-boxing.jpg?raw=true"
+        }
+    }
+]
