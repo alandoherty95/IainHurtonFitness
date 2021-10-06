@@ -148,6 +148,78 @@ body {
     text-decoration: none;
 }
 
+/* Club ethos */
+
+#club-ethos {
+    height: 40rem;
+}
+
+#left-about {
+    padding-top: 2rem;
+    width: 33%;
+    float: left;
+}
+
+#right-about {
+    padding-top: 2rem;
+    width: 33%;
+    float: right;
+}
+
+#center-about {
+    width: 33%;
+    margin: 0 auto;
+}
+
+.left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 3rem;
+}
+
+.right-about-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 3rem;
+}
+
+.right-about-heading p {
+    text-align: right;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+}
+
+/* Club ethos center image */
+
+#welcome {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#circle-container {
+    width: 30rem;
+    height: 30rem;
+    padding: 3rem;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#circle-cover-bg {
+    background: url('../media/images/circle-image.jpg') no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
