@@ -15,7 +15,7 @@
             <h2 class="logo-style mt-3">Blog</h2>
             <!-- Edit & delete buttons for admin only-->
             {% if request.user.is_superuser %}
-            <a href="{% url 'add_blogpost' %}" class="btn go-button rounded-3 btn-lg" title="Add post">Add Post</a>
+            <a href="{% url 'add_blogpost' %}" class="btn go-button" title="Add post">Add Post</a>
             {% endif %}
             <hr>
         </div>
@@ -37,7 +37,7 @@
                     </small>
                     {% endif %}
                     <p>{{ post.body|truncatechars:80 }}</p>
-                    <a href="{% url 'blogpost_detail' post.id %}" class="btn btn-outline-green rounded-3 float-right">View Post</a>
+                    <a href="{% url 'blogpost_detail' post.id %}" class="btn go-button float-right">View Post</a>
                 </div>
             </div>
             <div class="row">
