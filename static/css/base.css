@@ -29,21 +29,18 @@ body {
     background: #1985A1;
     color: white;
     border: 2px solid #1985A1;
-    min-width: 200px;
 }
 
 .go-button {
     background: #1985A1;
     color: white;
     border: 2px solid #1985A1;
-    min-width: 200px;
 }
 
 .btn-black {
     background: black;
     color: white;
     border: 2px solid black;
-    min-width: 200px;
 }
 
 .collapse-button {
@@ -90,6 +87,14 @@ body {
     font-family: 'Courgette', cursive;
 }
 
+.sub-style {
+    color: #1985A1;
+}
+
+.blog-text {
+    font-size: 30px;
+}
+
 .text-black {
     color: #000 !important;
 }
@@ -123,6 +128,11 @@ body {
 .card-body:hover {
     transform: scale(1.02);
     transition: 0.3s;
+}
+
+.card-img-top {
+    width: auto;
+    height: 22rem;
 }
 
 .social {
