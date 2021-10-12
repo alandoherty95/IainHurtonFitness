@@ -1,5 +1,5 @@
 from django.shortcuts import (render, redirect,
-                              reverse, HttpResponseRedirect)
+    reverse, HttpResponseRedirect)
 from django.contrib import messages
 from django.conf import settings
 from django.core.mail import send_mail
