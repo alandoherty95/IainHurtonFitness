@@ -13,18 +13,16 @@
     <div class="row">
         <div class="col mt-3">
             <!-- Page heading -->
-            <h2 class="logo-style m-3">Blog Post</h2>
+            <h2 class="logo-style m-3">Blog Post <i class="far fa-comment-alt"></i></h2>
         </div>
     </div>
     <div class="row">
         <!-- Post image -->
-        <div class="col-8">
+        <div class="col-6">
             <h3 class="logo-style m-3">{{ post.title }}</h3>
             <p class="blog-text m-3">{{ post.body }}</p>
             <!-- Displays post image -->
-        </div>
-        <div class="col-4">
-            <a href="{% url 'all_blogposts' %}" class="btn go-button">
+            <a href="{% url 'all_blogposts' %}" class="btn go-button m-3">
                 <i class="fas fa-chevron-left"></i> Return to Blog
             </a>
             <!-- Admin access only -->
@@ -36,7 +34,7 @@
             {% endif %}
         </div>
         <!-- Post details -->
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-6">
             {% if post.image %}
             <a href="{{ post.image.url }}" target="_blank">
                 <img class="card-img-top img-fluid" src="{{ post.image.url }}" alt="{{ post.title }}">

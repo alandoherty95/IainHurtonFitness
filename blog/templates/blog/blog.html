@@ -12,7 +12,7 @@
 <div class="container-fluid mb-2">
     <div class="row">
         <div class="col">
-            <h2 class="logo-style m-3">Blog</h2>
+            <h2 class="logo-style m-3">Blog <i class="far fa-comment-alt"></i></h2>
             <!-- Edit & delete buttons for admin only-->
             {% if request.user.is_superuser %}
             <a href="{% url 'add_blogpost' %}" class="btn go-button m-3" title="Add post">Add Post <i class="far fa-plus-square"></i></a>
@@ -25,13 +25,11 @@
         <div class="container-fluid">
             {% for post in posts %}
             <div class="row">
-                <div class="col-8">
+                <div class="col-6">
                     <a href="{% url 'blogpost_detail' post.id %}" class="logo-style">
-                        <h2 class="sub-style">{{ post.title }}</h2>
+                        <h2 class="sub-style mt-2">{{ post.title }}</h2>
                     </a>
                     <p class="blog-text">{{ post.body|truncatechars:80 }}</p>
-                </div>
-                <div class="col-4">
                     <a href="{% url 'blogpost_detail' post.id %}" class="btn go-button">View Post <i class="far fa-eye"></i></a>
                     <!-- Edit & delete buttons for admin only-->
                     {% if request.user.is_superuser %}
@@ -41,9 +39,7 @@
                     </medium>
                     {% endif %}
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-10 offset-1">
+                <div class="col-6">
                     <!-- Displays post image -->
                     {% if post.image %}
                     <a href="{{ post.image.url }}" target="_blank">
@@ -55,9 +51,9 @@
                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
                     </a>
                     {% endif %}
-                    <hr>
                 </div>
             </div>
+            <hr>
             {% endfor %}
         </div>
     </section>

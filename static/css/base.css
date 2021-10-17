@@ -89,10 +89,18 @@ body {
 
 .sub-style {
     color: #1985A1;
+    font-size: 1.8rem;
+}
+
+.roles {
+    list-style: square;
+    margin: 2em;
+    padding: 0;
+    font-size: 2rem;
 }
 
 .blog-text {
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .text-black {
