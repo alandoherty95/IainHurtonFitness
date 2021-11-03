@@ -22,7 +22,7 @@
     <!-- Add new blog post form -->
     <div class="row">
         <div class="col-12 col-md-8">
-            <form method="POST" action="{% url 'add_blogpost' %}" class="form mb-2" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'add_blogpost' %}" class="form mt-4" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
                 {% if field.name != 'image' %}

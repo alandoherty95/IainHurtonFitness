@@ -11,22 +11,43 @@
 
 {% block content %}
 <div class="container h-100">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
+    <div class="row">
+        <div class="col-6 my-auto">
             <h1 class="display-4 logo-style">
                 Iain Hurton Fitness
             </h1>
             <ul class="roles">
-                <li><i class="fas fa-certificate"></i> Fitness Instructor</li>
-                <li><i class="fas fa-certificate"></i> Personal Trainer</li>
-                <li><i class="fas fa-certificate"></i> Swimming Teacher</li>
+                <li><i class="far fa-check-circle"></i> Fitness Instructor</li>
+                <li><i class="far fa-check-circle"></i> Personal Trainer</li>
+                <li><i class="far fa-check-circle"></i> Swimming Teacher</li>
             </ul>
             <p class="sub-style">Start your fitness journey today!</p>
             <div class="my-5">
                 <h4>
-                    <a href="{% url 'about' %}" class="enter-button btn btn-lg rounded-0 text-uppercase py-3">Enter</a>
+                    <a href="{% url 'about' %}" class="enter-button btn btn-lg text-uppercase py-3">Enter</a>
                 </h4>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="my-auto social">
+            <ul id="social-links">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/pages/category/Personal-Blog/Iain-Hurton-Fitness-2181026858613543/" title="Facebook Profile" target="_blank">
+                        <h3><i class="fa fa-facebook"></i> Facebook</h3>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://open.spotify.com/playlist/59xQzFKBIph1NGVyC7e1zB?si=zeuUQVdgRg-gATAyl1OJbg" title="Spotify Playlist" target="_blank">
+                        <h3><i class="fa fa-spotify"></i> Spotify</h3>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/hurtonsfitness/?hl=en" title="Instagram Profile" target="_blank">
+                        <h3><i class="fa fa-instagram"></i> Instagram</h3>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
