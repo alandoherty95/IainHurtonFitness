@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'gallery',
     'about',
     'events',
-    'blog',   
+    'blog',  
     'crispy_forms',
 ]
 
